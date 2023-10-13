@@ -1,0 +1,17 @@
+.bundle
+.byebug_history
+.ruby-gemset
+.ruby-version
+.yardoc
+config/database.yml
+doc
+log/*
+node_modules
+spec/examples.txt
+tmp/*
+yarn-error.log
+.prettierrc
+.solargraph.yml
+docker-compose-services.yml
+*sam-*
+__pycache__
