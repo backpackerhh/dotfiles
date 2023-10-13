@@ -9,4 +9,5 @@
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.gitmessage: git/.gitmessage
+    ~/.config/git/gitk: git/gitk
     ~/.tmux.conf: os/linux/tmux/.tmux.conf
