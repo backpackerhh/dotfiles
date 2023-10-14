@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Manage system config
+##?
+##? Usage:
+##?   config backup
+##?   config restore
+docs::parse "$@"
+
+case $1 in
+"backup")
+	dconf dump / >$DOTFILES_PATH/os/linux/system_config
+	;;
+"restore")
+	dconf load / <$DOTFILES_PATH/os/linux/system_config
+	;;
+*)
+	exit 1
+	;;
+esac
