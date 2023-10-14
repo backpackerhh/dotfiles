@@ -18,20 +18,6 @@ fi
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
 # ------------------------------------------------------------------------------
-# Path - The higher it is, the more priority it has
+# Path - The sooner within the list, the more priority it has
 # ------------------------------------------------------------------------------
-path=(
-	"$HOME/bin"
-	"$DOTLY_PATH/bin"
-	"$DOTFILES_PATH/bin"
-	"$HOME/.cargo/bin"
-	"/usr/local/bin"
-	"/usr/local/sbin"
-	"/bin"
-	"/usr/bin"
-	"/usr/sbin"
-	"/sbin"
-	"$path"
-)
-
-export path
+export PATH="$DOTLY_PATH/bin":$DOTFILES_PATH/bin":$HOME/.cargo/bin:$PATH"
