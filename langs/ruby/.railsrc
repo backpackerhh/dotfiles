@@ -1,0 +1,14 @@
+--database postgresql
+--webpack
+--skip-sprockets
+--skip-javascript
+--skip-coffee
+--skip-turbolinks
+--skip-action-mailer
+--skip-action-cable
+--skip-action-text
+--skip-spring
+--skip-listen
+--skip-test
+--skip-system-test
+--skip-keeps

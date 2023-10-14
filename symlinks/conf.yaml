@@ -17,3 +17,6 @@
     ~/.zshenv: shell/zsh/.zshenv
     ~/.zshrc: shell/zsh/.zshrc
     ~/.inputrc: shell/.inputrc
+    ~/.gemrc: langs/ruby/.gemrc
+    ~/.railsrc: langs/ruby/.railsrc
+    ~/.rspec: langs/ruby/.rspec
