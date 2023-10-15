@@ -12,20 +12,35 @@ alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
 alias _='sudo '
-alias l='ls -lah'
 alias la='ls -lAh'
 alias ll='ls -lh'
 alias ls='ls --color=tty'
 alias lsa='ls -lah'
-alias md='mkdir -p'
-alias pf='cd /home/david/Documents/Projects'
+alias cpd='cd /home/david/Documents/Projects'
+
+function d() {
+  if [[ -n $1 ]]; then
+    dirs "$@"
+  else
+    dirs -v | head -n 10
+  fi
+}
+
+function cd() {
+  if [[ $@ =~ ^-\[1-9]$ ]]; then
+    local row=$((${1#-} + 1))
+
+    eval "builtin cd $(d | awk 'NR=='$row' {print $2}')"
+  else
+    builtin cd "$@"
+  fi
+}
 
 # dotfiles
 alias dotfiles='cd $DOTFILES_PATH'
 alias dgc='$DOTLY_PATH/bin/dot git commit'
 alias dgd='$DOTLY_PATH/bin/dot git pretty-diff'
 alias dglog='$DOTLY_PATH/bin/dot git pretty-log'
-alias up='dot package update_all'
 
 # Rails
 alias RED='RAILS_ENV=development'
