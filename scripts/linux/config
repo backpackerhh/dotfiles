@@ -11,12 +11,18 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?   config restore
 docs::parse "$@"
 
+file_path=$DOTFILES_PATH/os/linux/system_config
+
 case $1 in
 "backup")
-	dconf dump / >$DOTFILES_PATH/os/linux/system_config
+	dconf dump / >$file_path
+
+	echo "Config successfully backed up to $file_path."
 	;;
 "restore")
-	dconf load / <$DOTFILES_PATH/os/linux/system_config
+	dconf load / <$file_path
+
+	echo "Config successfully restored from $file_path."
 	;;
 *)
 	exit 1
