@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Manage VSCodium installed extensions
+##?
+##? Usage:
+##?   codium dump
+##?   codium import
+docs::parse "$@"
+
+file_path=$DOTFILES_PATH/editors/codium/installed_extensions
+
+case $1 in
+"dump")
+  codium --list-extensions --show-versions >$file_path
+
+  echo "Extensions successfully exported to $file_path."
+  ;;
+"import")
+  cat $file_path | xargs -I package codium --install-extension package
+
+  echo "Extensions successfully imported from $file_path."
+  ;;
+*)
+  exit 1
+  ;;
+esac
