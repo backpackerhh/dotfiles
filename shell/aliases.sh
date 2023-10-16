@@ -18,24 +18,6 @@ alias ls='ls --color=tty'
 alias lsa='ls -lah'
 alias cpd='cd /home/david/Documents/Projects'
 
-function d() {
-  if [[ -n $1 ]]; then
-    dirs "$@"
-  else
-    dirs -v | head -n 10
-  fi
-}
-
-function cd() {
-  if [[ $@ =~ ^-\[1-9]$ ]]; then
-    local row=$((${1#-} + 1))
-
-    eval "builtin cd $(d | awk 'NR=='$row' {print $2}')"
-  else
-    builtin cd "$@"
-  fi
-}
-
 # dotfiles
 alias dotfiles='cd $DOTFILES_PATH'
 alias dgc='$DOTLY_PATH/bin/dot git commit'
