@@ -14,3 +14,4 @@
     ~/.config/VSCodium/User/settings.json: editors/codium/settings.json
     ~/.config/VSCodium/User/keybindings.json: editors/codium/keybindings.json
     ~/.config/VSCodium/User/snippets: editors/codium/snippets
+    ~/.config/sublime-text/Packages/User: editors/sublime/user

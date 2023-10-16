@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"ApplySyntax",
+		"Better RSpec",
+		"Color Scheme - Legacy",
+		"Emmet",
+		"ESLint",
+		"FindKeyConflicts",
+		"JsPrettier",
+		"MarkdownPreview",
+		"Package Control",
+		"RSpec Buddy",
+		"RuboCop",
+		"Ruby Block Converter",
+		"SideBarEnhancements",
+		"Theme - Soda",
+		"Toggle Symbol to String",
+	],
+	"repositories":
+	[
+	],
+}

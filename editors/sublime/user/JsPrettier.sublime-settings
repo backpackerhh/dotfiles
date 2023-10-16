@@ -1,0 +1,11 @@
+{
+  "debug": false,
+  "prettier_cli_path": "$HOME/.nvm/versions/node/v18.16.0/bin/prettier",
+  "node_path": "$HOME/.nvm/versions/node/v18.16.0/bin/node",
+  "auto_format_on_save": true,
+  "prettier_options": {
+    "printWidth": 100,
+    "semi": false,
+    "trailingComma": "all",
+  }
+}

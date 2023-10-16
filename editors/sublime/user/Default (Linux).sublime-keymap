@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["alt+super+b"], "command": "do_end_to_brace" },
+  { "keys": ["alt+super+d"], "command": "brace_to_do_end" },
+  { "keys": ["ctrl+shift+,"], "command": "toggle_symbol" },
+]
