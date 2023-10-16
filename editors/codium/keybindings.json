@@ -1,0 +1,61 @@
+[
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+shift+2",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "meta+1",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "meta+2",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "meta+3",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "meta+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "alt+e c",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.constant"
+    }
+  },
+  {
+    "key": "alt+e i",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.interface"
+    }
+  },
+  {
+    "key": "alt+e m",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.function"
+    }
+  },
+  {
+    "key": "ctrl+shift+k u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+shift+k l",
+    "command": "editor.action.transformToLowercase"
+  },
+]

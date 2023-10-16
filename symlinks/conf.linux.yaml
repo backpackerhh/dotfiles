@@ -11,3 +11,6 @@
     ~/.gitmessage: git/.gitmessage
     ~/.config/git/gitk: git/gitk
     ~/.tmux.conf: os/linux/tmux/.tmux.conf
+    ~/.config/VSCodium/User/settings.json: editors/codium/settings.json
+    ~/.config/VSCodium/User/keybindings.json: editors/codium/keybindings.json
+    ~/.config/VSCodium/User/snippets: editors/codium/snippets
