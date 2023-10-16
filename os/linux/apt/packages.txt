@@ -57,6 +57,7 @@ shim-signed
 simplescreenrecorder
 smplayer
 sublime-merge
+tldr
 tmux
 ubuntu-advantage-tools
 ubuntu-mate-artwork
