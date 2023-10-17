@@ -23,3 +23,9 @@ function cdd() {
 function muc() {
 	fc -lim "*$@*" 1 | awk '{print $4}' | sort | uniq -c | sort -rn | head
 }
+
+function zsh::performance() {
+	limit=${1:-10}
+
+	for i in $(seq 1 $limit); do time zsh -i -c exit; done
+}
