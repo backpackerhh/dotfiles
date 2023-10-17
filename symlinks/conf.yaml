@@ -12,11 +12,18 @@
 - link:
     ~/.bash_profile: shell/bash/.bash_profile
     ~/.bashrc: shell/bash/.bashrc
+
+    ~/.inputrc: shell/.inputrc
+
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.gitmessage: git/.gitmessage
+
+    ~/.gemrc: langs/ruby/.gemrc
+    ~/.railsrc: langs/ruby/.railsrc
+    ~/.rspec: langs/ruby/.rspec
+
     ~/.zimrc: shell/zsh/.zimrc
     ~/.zlogin: shell/zsh/.zlogin
     ~/.zshenv: shell/zsh/.zshenv
     ~/.zshrc: shell/zsh/.zshrc
-    ~/.inputrc: shell/.inputrc
-    ~/.gemrc: langs/ruby/.gemrc
-    ~/.railsrc: langs/ruby/.railsrc
-    ~/.rspec: langs/ruby/.rspec

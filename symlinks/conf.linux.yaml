@@ -6,12 +6,12 @@
       force: true
 
 - link:
-    ~/.gitconfig: git/.gitconfig
-    ~/.gitignore_global: git/.gitignore_global
-    ~/.gitmessage: git/.gitmessage
-    ~/.config/git/gitk: git/gitk
     ~/.tmux.conf: os/linux/tmux/.tmux.conf
+
+    ~/.config/git/gitk: git/gitk
+
     ~/.config/VSCodium/User/settings.json: editors/codium/settings.json
     ~/.config/VSCodium/User/keybindings.json: editors/codium/keybindings.json
     ~/.config/VSCodium/User/snippets: editors/codium/snippets
+
     ~/.config/sublime-text/Packages/User: editors/sublime/user
