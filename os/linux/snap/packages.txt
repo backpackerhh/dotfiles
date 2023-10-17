@@ -20,4 +20,3 @@ snapd
 snapd-desktop-integration
 software-boutique
 sublime-text
-ubuntu-mate-welcome
