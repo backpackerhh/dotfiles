@@ -1,7 +1,3 @@
-function cdd() {
-	cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
-}
-
 function d() {
 	if [[ -n $1 ]]; then
 		dirs "$@"
@@ -18,4 +14,12 @@ function cd() {
 	else
 		builtin cd "$@"
 	fi
+}
+
+function cdd() {
+	cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
+}
+
+function muc() {
+	fc -lim "*$@*" 1 | awk '{print $4}' | sort | uniq -c | sort -rn | head
 }
