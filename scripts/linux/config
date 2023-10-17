@@ -9,6 +9,7 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##? Usage:
 ##?   config backup
 ##?   config restore
+##?   config reset
 docs::parse "$@"
 
 file_path=$DOTFILES_PATH/os/linux/system_config
@@ -23,6 +24,11 @@ case $1 in
 	dconf load / <$file_path
 
 	echo "Config successfully restored from $file_path."
+	;;
+"reset")
+	dconf reset -f /
+
+	echo "Config successfully reset."
 	;;
 *)
 	exit 1

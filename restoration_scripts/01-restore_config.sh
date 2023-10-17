@@ -2,4 +2,5 @@
 
 set -euo pipefail
 
+dot linux config reset
 dot linux config restore
