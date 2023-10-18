@@ -27,5 +27,5 @@ function muc() {
 function zsh::performance() {
 	limit=${1:-10}
 
-	for i in $(seq 1 $limit); do time zsh -i -c exit; done
+	repeat $limit { time zsh -i -c exit }
 }
