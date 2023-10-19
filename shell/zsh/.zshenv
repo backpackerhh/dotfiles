@@ -1,6 +1,6 @@
 export DOTFILES_PATH="/home/david/.dotfiles"
 export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
-export DOTLY_THEME="codely"
+export ZSH_THEME="backpackerhh"
 export ZIM_HOME="$DOTFILES_PATH/shell/zsh/.zim"
 export NODE_OPTIONS="--max-old-space-size=4096"
 export DISABLE_SPRING=true
