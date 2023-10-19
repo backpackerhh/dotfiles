@@ -2,7 +2,9 @@ carlocardella.vscode-texttoolbox@2.6.0
 castwide.solargraph@0.24.0
 dbaeumer.vscode-eslint@2.4.2
 foxundermoon.shell-format@7.0.1
-ms-azuretools.vscode-docker@1.26.1
+mads-hartmann.bash-ide-vscode@1.38.0
+ms-azuretools.vscode-docker@1.27.0
 Orta.vscode-jest@5.2.3
+timonwong.shellcheck@0.34.0
 zokugun.cron-tasks@0.1.2
 zokugun.sync-settings@0.16.0
