@@ -5,6 +5,7 @@ foxundermoon.shell-format@7.0.1
 mads-hartmann.bash-ide-vscode@1.38.0
 ms-azuretools.vscode-docker@1.27.0
 Orta.vscode-jest@5.2.3
+sadesyllas.vscode-workspace-switcher@1.15.3
 timonwong.shellcheck@0.34.0
 zokugun.cron-tasks@0.1.2
 zokugun.sync-settings@0.16.0

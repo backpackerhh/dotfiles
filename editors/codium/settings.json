@@ -38,6 +38,11 @@
     "editor.codeActionsOnSave": {
         "source.addMissingImports": true,
     },
-    "workbench.statusBar.visible": false,
+    "vscodeWorkspaceSwitcher.paths": [
+        "~/Documents/Projects/00-codium-workspaces"
+    ],
+    "vscodeWorkspaceSwitcher.showInActivityBar": false,
+    "vscodeWorkspaceSwitcher.showInExplorer": true,
+    "vscodeWorkspaceSwitcher.showTreeView": false,
     "workbench.activityBar.visible": false,
 }
