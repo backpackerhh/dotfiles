@@ -1,6 +1,12 @@
 #!/usr/bin/env zsh
+
 # Uncomment to start debugging with `zprof` (enable it at the end of this file too)
 # zmodload zsh/zprof
+
+# "$DOTFILES_PATH/shell/zsh/.zshenv" is automatically loaded first
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTFILES_PATH/shell/functions.sh"
+source "$DOTFILES_PATH/shell/zsh/functions.sh"
 
 # ZSH Ops
 setopt HIST_IGNORE_ALL_DUPS
@@ -27,8 +33,6 @@ source "$ZIM_HOME/init.zsh"
 # Async mode for autocompletion
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
-
-source "$DOTFILES_PATH/shell/init.sh"
 
 fpath=("$DOTFILES_PATH/shell/zsh/themes" "$DOTFILES_PATH/shell/zsh/completions" "$DOTLY_PATH/shell/zsh/themes" "$DOTLY_PATH/shell/zsh/completions" $fpath)
 

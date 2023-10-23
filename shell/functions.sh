@@ -20,12 +20,7 @@ function cdd() {
 	cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
 }
 
-function muc() {
-	fc -lim "*$@*" 1 | awk '{print $4}' | sort | uniq -c | sort -rn | head
-}
-
-function zsh::performance() {
-	limit=${1:-10}
-
-	repeat $limit { time zsh -i -c exit }
+# Pretty print $PATH
+function ppp() {
+	echo $PATH | tr : '\n'
 }

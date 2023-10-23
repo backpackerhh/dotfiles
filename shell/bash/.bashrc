@@ -1,14 +1,7 @@
-export DOTFILES_PATH="/home/david/.dotfiles"
-export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
-export DOTLY_THEME="codely"
-
-source "$DOTFILES_PATH/shell/init.sh"
-
-EXPORTED_PATH=$(
-  IFS=":"
-  echo "${path[*]}"
-)
-export PATH="$PATH:$EXPORTED_PATH"
+source "$DOTFILES_PATH/shell/bash/.bashenv"
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTFILES_PATH/shell/functions.sh"
+source "$DOTFILES_PATH/shell/bash/functions.sh"
 
 themes_paths=(
   "$DOTFILES_PATH/shell/bash/themes"
@@ -31,11 +24,12 @@ if [[ "$(ps -p $$ -ocomm=)" =~ (bash$) ]]; then
 
     if
       [[ -n "${THEME_COMMAND:-}" ]] &&
-      declare -F "${THEME_COMMAND:-}" &> /dev/null
+        declare -F "${THEME_COMMAND:-}" &>/dev/null
     then
       "${THEME_COMMAND:-}"
     fi
   }
+
   export PROMPT_COMMAND="__right_prompt"
 fi
 
@@ -43,14 +37,12 @@ for bash_file in "$DOTLY_PATH"/shell/bash/completions/_*; do
   source "$bash_file"
 done
 
-if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
-  for bash_file in "$DOTFILES_PATH"/shell/bash/completions/_*; do
-    source "$bash_file"
-  done
-fi
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Uncomment code below when some completion is added
+# if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
+#   for bash_file in "$DOTFILES_PATH"/shell/bash/completions/_*; do
+#     source "$bash_file"
+#   done
+# fi
 
 source "$DOTFILES_PATH/shell/lazy/nvm.sh"
 source "$DOTFILES_PATH/shell/lazy/rvm.sh"
