@@ -22,6 +22,7 @@
     ~/.gemrc: langs/ruby/.gemrc
     ~/.railsrc: langs/ruby/.railsrc
     ~/.rspec: langs/ruby/.rspec
+    ~/.rvmrc: langs/ruby/.rvmrc
 
     ~/.zimrc: shell/zsh/.zimrc
     ~/.zlogin: shell/zsh/.zlogin
