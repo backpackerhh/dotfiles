@@ -1,13 +1,10 @@
 export DOTFILES_PATH="/home/david/.dotfiles"
 export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
-export DOTLY_THEME="codely"
-export CODELY_THEME_MINIMAL=false
-export CODELY_THEME_MODE="dark"
-export CODELY_THEME_PROMPT_IN_NEW_LINE=false
-export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
+export BASH_THEME="backpackerhh"
 export NODE_OPTIONS="--max-old-space-size=4096"
 export DISABLE_SPRING=true
 export NVM_DIR="$HOME/.nvm"
+export FZF_DEFAULT_OPTS="--reverse"
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -15,11 +12,4 @@ else
   export EDITOR='codium'
 fi
 
-if [ "$CODELY_THEME_MODE" = "dark" ]; then
-  fzf_colors="pointer:#ebdbb2,bg+:#3c3836,fg:#ebdbb2,fg+:#fbf1c7,hl:#8ec07c,info:#928374,header:#fb4934"
-else
-  fzf_colors="pointer:#db0f35,bg+:#d6d6d6,fg:#808080,fg+:#363636,hl:#8ec07c,info:#928374,header:#fffee3"
-fi
-
-export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 export PATH="$DOTLY_PATH/bin":$DOTFILES_PATH/bin":$PATH"
