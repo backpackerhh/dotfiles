@@ -37,8 +37,9 @@ autoload -Uz promptinit && promptinit
 source "$DOTLY_PATH/shell/zsh/bindings/dot.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
-source "$DOTFILES_PATH/shell/zsh/lazy/nvm.sh"
-source "$DOTFILES_PATH/shell/zsh/lazy/rvm.sh"
+
+source "$DOTFILES_PATH/shell/lazy/nvm.sh"
+source "$DOTFILES_PATH/shell/lazy/rvm.sh"
 
 source "$DOTFILES_PATH/shell/zsh/themes/$ZSH_THEME.zsh-theme"
 
