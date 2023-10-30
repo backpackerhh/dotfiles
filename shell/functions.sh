@@ -22,5 +22,28 @@ function cdd() {
 
 # Pretty print $PATH
 function ppp() {
-	echo $PATH | tr : '\n'
+	echo "$PATH" | tr : '\n'
+}
+
+# Docker
+function dctexi() {
+	if [[ -z "$*" ]]; then
+		echo "Error: No args provided"
+		return
+	fi
+
+	container_id=$(docker ps | fzf | awk '{print $1}')
+
+	docker exec -it $container_id "$@"
+}
+
+function diruni() {
+	if [[ -z "$*" ]]; then
+		echo "Error: No args provided"
+		return
+	fi
+
+	image_id=$(docker image ls | fzf | awk '{print $3}')
+
+	docker run -it --rm $image_id "$@"
 }

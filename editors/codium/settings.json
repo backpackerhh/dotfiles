@@ -44,7 +44,10 @@
     "vscodeWorkspaceSwitcher.showInActivityBar": false,
     "vscodeWorkspaceSwitcher.showInExplorer": true,
     "vscodeWorkspaceSwitcher.showTreeView": false,
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
 }

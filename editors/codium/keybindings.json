@@ -59,6 +59,10 @@
     "command": "editor.action.transformToLowercase"
   },
   {
+    "key": "ctrl+shift+s d",
+    "command": "workbench.view.extension.dockerView"
+  },
+  {
     "key": "ctrl+a right",
     "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus"
