@@ -12,26 +12,13 @@ alias ls='ls --color=tty'
 alias la='ls -lAh'
 alias ll='ls -lh'
 alias lsa='ls -lah'
-alias cpd='cd /home/david/Documents/Projects'
+alias cpd='cd $HOME/Documents/Projects'
 
 # dotfiles
 alias dotfiles='cd $DOTFILES_PATH'
 alias dgc='$DOTLY_PATH/bin/dot git commit'
 alias dgd='$DOTLY_PATH/bin/dot git pretty-diff'
 alias dglog='$DOTLY_PATH/bin/dot git pretty-log'
-
-# Rails
-alias RED='RAILS_ENV=development'
-alias REP='RAILS_ENV=production'
-alias RET='RAILS_ENV=test'
-alias devlog='tail -f log/development.log'
-alias prodlog='tail -f log/production.log'
-alias testlog='tail -f log/test.log'
-
-# Bundle
-alias be='bundle exec'
-alias bi='bundle install'
-alias bu='bundle update'
 
 # Git
 alias g=git
@@ -154,6 +141,19 @@ alias guidx='git update-index'
 alias gunwip='git rev-list --max-count=1 --format="%s" HEAD | grep -q "\--wip--" && git reset HEAD~1'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'
 alias gpristine='git reset --hard && git clean --force -dfx'
+
+# Rails
+alias RED='RAILS_ENV=development'
+alias REP='RAILS_ENV=production'
+alias RET='RAILS_ENV=test'
+alias devlog='tail -f log/development.log'
+alias prodlog='tail -f log/production.log'
+alias testlog='tail -f log/test.log'
+
+# Bundle
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
 
 # Python
 alias python=python3
