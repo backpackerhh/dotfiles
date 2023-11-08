@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../domestika"
+		},
+		{
+			"path": "../domestika_api"
 		}
 	],
 	"settings": {}
