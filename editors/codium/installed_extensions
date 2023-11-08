@@ -1,5 +1,4 @@
 carlocardella.vscode-texttoolbox@2.6.0
-castwide.solargraph@0.24.0
 dbaeumer.vscode-eslint@2.4.2
 eamodio.gitlens@14.4.1
 foxundermoon.shell-format@7.0.1
@@ -7,6 +6,7 @@ mads-hartmann.bash-ide-vscode@1.38.0
 ms-azuretools.vscode-docker@1.27.0
 Orta.vscode-jest@5.2.3
 sadesyllas.vscode-workspace-switcher@1.15.3
+Shopify.ruby-lsp@0.4.13
 timonwong.shellcheck@0.34.0
 yzhang.markdown-all-in-one@3.5.1
 zokugun.cron-tasks@0.1.2
