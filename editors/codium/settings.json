@@ -63,16 +63,71 @@
         "line",
         "overview"
     ],
+    "gitlens.modes": {
+        "zen": {
+            "name": "Zen",
+            "statusBarItemName": "Zen",
+            "description": "for a zen-like experience, disables many visual features",
+            "codeLens": false,
+            "currentLine": false,
+            "hovers": false,
+            "statusBar": false
+        },
+        "review": {
+            "name": "Review",
+            "statusBarItemName": "Reviewing",
+            "description": "for reviewing code, enables many visual features",
+            "codeLens": true,
+            "currentLine": true,
+            "hovers": true,
+            "statusBar": false
+        }
+    },
     "gitlens.mode.statusBar.enabled": true,
     "gitlens.mode.active": "zen",
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.showWelcomeOnInstall": false,
-    "gitlens.plusFeatures.enabled": false,
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.telemetry.enabled": false,
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": false,
+        "editor.formatOnType": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.semanticHighlighting.enabled": true,
+    },
     "rubyLsp.rubyVersionManager": "rvm",
-    "rubyLsp.formatter": "auto",
+    "rubyLsp.formatter": "rubocop",
     "rubyLsp.enableExperimentalFeatures": true,
+    "rubyLsp.bundleGemfile": "/media/david/Documents/Projects/ruby-lsp/Gemfile",
+    "rubyLsp.enabledFeatures": {
+        "codeActions": true,
+        "diagnostics": true,
+        "documentHighlights": true,
+        "documentLink": true,
+        "documentSymbols": true,
+        "foldingRanges": true,
+        "formatting": false,
+        "hover": true,
+        "inlayHint": true,
+        "onTypeFormatting": false,
+        "selectionRanges": true,
+        "semanticHighlighting": true,
+        "completion": true,
+        "codeLens": true,
+        "definition": true,
+        "workspaceSymbol": true,
+        "references": true
+    },
+    "rubyLsp.yjit": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.location": "hidden",
 }
