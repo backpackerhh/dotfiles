@@ -47,3 +47,11 @@ function diruni() {
 
 	docker run -it --rm $image_id "$@"
 }
+
+function wifi:reload() {
+	driver=$(sudo lshw -C network 2>&1 | grep wireless | grep -oP 'driver=\K\S+')
+
+	sudo modprobe -r $driver && sudo modprobe $driver
+
+	echo "Wifi network will restart soon"
+}
