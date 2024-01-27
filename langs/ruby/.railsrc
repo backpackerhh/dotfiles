@@ -1,6 +1,5 @@
 --database postgresql
---webpack
---skip-sprockets
+--skip-asset-pipeline
 --skip-javascript
 --skip-coffee
 --skip-turbolinks
@@ -12,3 +11,5 @@
 --skip-test
 --skip-system-test
 --skip-keeps
+--skip-git
+--skip-decrypted-diffs
