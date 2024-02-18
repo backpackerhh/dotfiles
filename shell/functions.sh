@@ -55,3 +55,12 @@ function wifi:reload() {
 
 	echo "Wifi network will restart soon"
 }
+
+function freeport() {
+	if [[ -z "$1" ]]; then
+		echo "Error: No port provided"
+		return
+	fi
+
+	sudo fuser -k "$1"/tcp
+}
