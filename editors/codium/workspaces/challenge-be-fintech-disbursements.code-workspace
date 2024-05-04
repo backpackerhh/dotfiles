@@ -1,8 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "/media/david/Documents/Projects/challenges/challenge-be-fintech-disbursements"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "/media/david/Documents/Projects/challenges/challenge-be-fintech-disbursements-hanami"
+    },
+    {
+      "path": "/media/david/Documents/Projects/challenges/challenge-be-fintech-disbursements-rails"
+    }
+  ],
+  "settings": {}
 }
