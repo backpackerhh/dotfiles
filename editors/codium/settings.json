@@ -1,133 +1,141 @@
 {
-    "syncSettings.crons": {
-        "upload": "0 12 * * *" // at 12PM, every day
+  "syncSettings.crons": {
+    "upload": "0 12 * * *" // at 12PM, every day
+  },
+  "workbench.colorTheme": "Default Light Modern",
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": false,
+  "search.useGlobalIgnoreFiles": false,
+  "search.useIgnoreFiles": false,
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.renderWhitespace": "boundary",
+  "workbench.tree.indent": 15,
+  "explorer.compactFolders": false,
+  "editor.lineHeight": 1.6,
+  "editor.dragAndDrop": false,
+  "breadcrumbs.symbolPath": "off",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit"
+  },
+  "vscodeWorkspaceSwitcher.paths": [
+    "~/Documents/Projects/00-codium-workspaces"
+  ],
+  "vscodeWorkspaceSwitcher.showInActivityBar": false,
+  "vscodeWorkspaceSwitcher.showInExplorer": true,
+  "vscodeWorkspaceSwitcher.showTreeView": false,
+  "workbench.startupEditor": "none",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "gitlens.currentLine.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.annotations.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.scopes": ["document", "containers"],
+  "gitlens.statusBar.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.modes": {
+    "zen": {
+      "name": "Zen",
+      "statusBarItemName": "Zen",
+      "description": "for a zen-like experience, disables many visual features",
+      "codeLens": false,
+      "currentLine": false,
+      "hovers": false,
+      "statusBar": false
     },
-    "workbench.colorTheme": "Default Light Modern",
-    "editor.minimap.enabled": false,
-    "editor.formatOnPaste": false,
+    "review": {
+      "name": "Review",
+      "statusBarItemName": "Reviewing",
+      "description": "for reviewing code, enables many visual features",
+      "codeLens": true,
+      "currentLine": true,
+      "hovers": true,
+      "statusBar": false
+    }
+  },
+  "gitlens.mode.statusBar.enabled": true,
+  "gitlens.mode.active": "zen",
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.virtualRepositories.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
     "editor.formatOnSave": true,
-    "editor.suggestSelection": "first",
-    "editor.rulers": [
-        120
-    ],
+    "editor.formatOnType": false,
     "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.excludeGitIgnore": false,
-    "search.useGlobalIgnoreFiles": false,
-    "search.useIgnoreFiles": false,
-    "files.autoSave": "onFocusChange",
-    "files.eol": "\n",
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "editor.renderWhitespace": "boundary",
-    "workbench.tree.indent": 15,
-    "explorer.compactFolders": false,
-    "editor.lineHeight": 1.6,
-    "editor.dragAndDrop": false,
-    "breadcrumbs.symbolPath": "off",
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.acceptSuggestionOnCommitCharacter": true,
-    "editor.lightbulb.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.addMissingImports": true,
-    },
-    "vscodeWorkspaceSwitcher.paths": [
-        "~/Documents/Projects/00-codium-workspaces"
-    ],
-    "vscodeWorkspaceSwitcher.showInActivityBar": false,
-    "vscodeWorkspaceSwitcher.showInExplorer": true,
-    "vscodeWorkspaceSwitcher.showTreeView": false,
-    "workbench.startupEditor": "none",
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "gitlens.currentLine.enabled": true,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.hovers.annotations.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.scopes": [
-        "document",
-        "containers"
-    ],
-    "gitlens.statusBar.enabled": false,
-    "gitlens.statusBar.pullRequests.enabled": false,
-    "gitlens.blame.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "gitlens.modes": {
-        "zen": {
-            "name": "Zen",
-            "statusBarItemName": "Zen",
-            "description": "for a zen-like experience, disables many visual features",
-            "codeLens": false,
-            "currentLine": false,
-            "hovers": false,
-            "statusBar": false
-        },
-        "review": {
-            "name": "Review",
-            "statusBarItemName": "Reviewing",
-            "description": "for reviewing code, enables many visual features",
-            "codeLens": true,
-            "currentLine": true,
-            "hovers": true,
-            "statusBar": false
-        }
-    },
-    "gitlens.mode.statusBar.enabled": true,
-    "gitlens.mode.active": "zen",
-    "gitlens.showWhatsNewAfterUpgrades": false,
-    "gitlens.showWelcomeOnInstall": false,
-    "gitlens.virtualRepositories.enabled": false,
-    "gitlens.telemetry.enabled": false,
-    "[ruby]": {
-        "editor.defaultFormatter": "Shopify.ruby-lsp",
-        "editor.formatOnSave": false,
-        "editor.formatOnType": false,
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.semanticHighlighting.enabled": true,
-    },
-    "rubyLsp.rubyVersionManager": "rvm",
-    "rubyLsp.formatter": "rubocop",
-    "rubyLsp.enableExperimentalFeatures": true,
-    "rubyLsp.bundleGemfile": "/media/david/Documents/Projects/ruby-lsp/Gemfile",
-    "rubyLsp.enabledFeatures": {
-        "codeActions": true,
-        "diagnostics": true,
-        "documentHighlights": true,
-        "documentLink": true,
-        "documentSymbols": true,
-        "foldingRanges": true,
-        "formatting": false,
-        "hover": true,
-        "inlayHint": true,
-        "onTypeFormatting": false,
-        "selectionRanges": true,
-        "semanticHighlighting": true,
-        "completion": true,
-        "codeLens": true,
-        "definition": true,
-        "workspaceSymbol": true,
-        "references": true
-    },
-    "rubyLsp.yjit": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.location": "hidden",
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true
+  },
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rvm"
+  },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.enableExperimentalFeatures": false,
+  "rubyLsp.bundleGemfile": "/media/david/Documents/Projects/ruby-lsp/Gemfile",
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": false,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "references": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": false
 }
