@@ -13,4 +13,4 @@ else
   export EDITOR='codium'
 fi
 
-export PATH="$DOTLY_PATH/bin":$DOTFILES_PATH/bin":$PATH"
+export PATH="$DOTLY_PATH/bin:$DOTFILES_PATH/bin:/snap/bin:$PATH"
