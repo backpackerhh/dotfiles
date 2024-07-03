@@ -14,3 +14,6 @@ else
 fi
 
 export PATH="$DOTLY_PATH/bin:$DOTFILES_PATH/bin:/snap/bin:$PATH"
+
+# https://github.com/zimfw/zimfw/wiki/Troubleshooting#completion-is-not-working
+skip_global_compinit=1
