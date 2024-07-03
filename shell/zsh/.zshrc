@@ -7,6 +7,7 @@
 source "$DOTFILES_PATH/shell/aliases.sh"
 source "$DOTFILES_PATH/shell/functions.sh"
 source "$DOTFILES_PATH/shell/zsh/functions.sh"
+source "$DOTFILES_PATH/shell/ssh.sh"
 
 # ZSH Ops
 setopt HIST_IGNORE_ALL_DUPS

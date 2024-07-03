@@ -2,6 +2,7 @@ source "$DOTFILES_PATH/shell/bash/.bashenv"
 source "$DOTFILES_PATH/shell/aliases.sh"
 source "$DOTFILES_PATH/shell/functions.sh"
 source "$DOTFILES_PATH/shell/bash/functions.sh"
+source "$DOTFILES_PATH/shell/ssh.sh"
 
 themes_paths=(
   "$DOTFILES_PATH/shell/bash/themes"
