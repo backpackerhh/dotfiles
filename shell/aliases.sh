@@ -14,6 +14,7 @@ alias la='ls -lAh'
 alias ll='ls -lh'
 alias lsa='ls -lah'
 alias rm='rm -iv'
+alias codium='DONT_PROMPT_WSL_INSTALL=1 codium'
 
 # dotfiles
 alias dotfiles='cd $DOTFILES_PATH'
