@@ -8,21 +8,67 @@
     "command": "workbench.action.toggleStatusbarVisibility"
   },
   {
-    "key": "ctrl+shift+d",
+    "key": "ctrl+shift+o",
+    "command": "workbench.view.extension.dockerView"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.view.extension.openapi-explorer"
+  },
+  {
+    "key": "meta+[Backquote]",
+    "command": "workbench.action.focusSideBar"
+  },
+  { "key": "meta+1", "command": "workbench.action.focusFirstEditorGroup" },
+  { "key": "meta+2", "command": "workbench.action.focusSecondEditorGroup" },
+  { "key": "meta+3", "command": "workbench.action.focusThirdEditorGroup" },
+  { "key": "meta+4", "command": "workbench.action.focusFourthEditorGroup" },
+  { "key": "meta+5", "command": "workbench.action.focusFifthEditorGroup" },
+  { "key": "meta+6", "command": "workbench.action.focusSixthEditorGroup" },
+  { "key": "meta+7", "command": "workbench.action.focusSeventhEditorGroup" },
+  { "key": "meta+8", "command": "workbench.action.focusEighthEditorGroup" },
+  { "key": "meta+9", "command": "workbench.action.focusLastEditorGroup" },
+  { "key": "ctrl+1", "command": "workbench.action.openEditorAtIndex1" },
+  { "key": "ctrl+2", "command": "workbench.action.openEditorAtIndex2" },
+  { "key": "ctrl+3", "command": "workbench.action.openEditorAtIndex3" },
+  { "key": "ctrl+4", "command": "workbench.action.openEditorAtIndex4" },
+  { "key": "ctrl+5", "command": "workbench.action.openEditorAtIndex5" },
+  { "key": "ctrl+6", "command": "workbench.action.openEditorAtIndex6" },
+  { "key": "ctrl+7", "command": "workbench.action.openEditorAtIndex7" },
+  { "key": "ctrl+8", "command": "workbench.action.openEditorAtIndex8" },
+  { "key": "ctrl+9", "command": "workbench.action.openEditorAtIndex9" },
+  {
+    "key": "alt+d",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "meta+1",
-    "command": "workbench.action.focusSideBar"
+    "key": "alt+right",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "meta+2",
-    "command": "workbench.action.focusFirstEditorGroup"
+    "key": "alt+left",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "meta+3",
-    "command": "workbench.action.focusSecondEditorGroup"
+    "key": "alt+down",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+up",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+meta+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+meta+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
   },
   {
     "key": "meta+n",
@@ -51,51 +97,183 @@
     }
   },
   {
-    "key": "ctrl+shift+k u",
-    "command": "editor.action.transformToUppercase"
+    "key": "alt+t u",
+    "command": "editor.action.transformToUppercase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+k l",
-    "command": "editor.action.transformToLowercase"
+    "key": "alt+t l",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+s d",
-    "command": "workbench.view.extension.dockerView"
+    "key": "alt+t c",
+    "command": "editor.action.transformToCamelcase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+a right",
-    "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus"
+    "key": "alt+t k",
+    "command": "editor.action.transformToKebabcase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+a left",
-    "command": "workbench.action.terminal.focusPreviousPane",
-    "when": "terminalFocus"
+    "key": "alt+t p",
+    "command": "editor.action.transformToPascalcase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+a down",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
+    "key": "alt+t s",
+    "command": "editor.action.transformToSnakecase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+a up",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
+    "key": "alt+t t",
+    "command": "editor.action.transformToTitlecase",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+meta+right",
-    "command": "workbench.action.moveEditorToNextGroup"
+    "key": "ctrl+k ctrl+`",
+    "command": "workbench.action.createTerminalEditorSide"
   },
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+0",
+    "command": "workbench.action.evenEditorWidths",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+meta+up",
+    "command": "workbench.action.terminal.selectToPreviousCommand",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+meta+down",
+    "command": "workbench.action.terminal.selectToNextCommand",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+[BracketRight]",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+numpad_multiply",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+numpad_divide",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // Negative
+  { "key": "ctrl+0", "command": "-workbench.action.focusSideBar" },
+  { "key": "ctrl+1", "command": "-workbench.action.focusFirstEditorGroup" },
+  { "key": "ctrl+2", "command": "-workbench.action.focusSecondEditorGroup" },
+  { "key": "ctrl+3", "command": "-workbench.action.focusThirdEditorGroup" },
+  { "key": "ctrl+4", "command": "-workbench.action.focusFourthEditorGroup" },
+  { "key": "ctrl+5", "command": "-workbench.action.focusFifthEditorGroup" },
+  { "key": "ctrl+6", "command": "-workbench.action.focusSixthEditorGroup" },
+  { "key": "ctrl+7", "command": "-workbench.action.focusSeventhEditorGroup" },
+  { "key": "ctrl+8", "command": "-workbench.action.focusEighthEditorGroup" },
+  { "key": "alt+1", "command": "-workbench.action.openEditorAtIndex1" },
+  { "key": "alt+2", "command": "-workbench.action.openEditorAtIndex2" },
+  { "key": "alt+3", "command": "-workbench.action.openEditorAtIndex3" },
+  { "key": "alt+4", "command": "-workbench.action.openEditorAtIndex4" },
+  { "key": "alt+5", "command": "-workbench.action.openEditorAtIndex5" },
+  { "key": "alt+6", "command": "-workbench.action.openEditorAtIndex6" },
+  { "key": "alt+7", "command": "-workbench.action.openEditorAtIndex7" },
+  { "key": "alt+8", "command": "-workbench.action.openEditorAtIndex8" },
+  { "key": "alt+9", "command": "-workbench.action.openEditorAtIndex9" },
   {
     "key": "ctrl+alt+right",
     "command": "-workbench.action.moveEditorToNextGroup"
   },
   {
-    "key": "ctrl+meta+left",
-    "command": "workbench.action.moveEditorToPreviousGroup"
-  },
-  {
     "key": "ctrl+alt+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
   },
+  {
+    "key": "alt+down",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+up",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-workbench.action.terminal.selectToPreviousCommand",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-workbench.action.terminal.selectToNextCommand",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-workbench.action.terminal.scrollDown",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-workbench.action.terminal.scrollUp",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+  },
+  {
+    "key": "ctrl+shift+0",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-workbench.action.terminal.focusHover",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-workbench.action.terminal.hideFind",
+    "when": "terminalFindVisible && terminalFocusInAny && terminalHasBeenCreated || terminalFindVisible && terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  }
 ]
